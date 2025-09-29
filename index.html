@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Care Guide 🌱</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🌱 Plant Care Guide</h1>
+      <p>Learn how to take care of your favorite plants</p>
+    </div>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-toggle" id="navToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Plants</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Care Tips</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Plant Card 1 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Aloe Vera.jpg" alt="Aloe Vera">
+      </div>
+      <div class="card-content">
+        <h2>Aloe Vera</h2>
+        <p>Water every 2-3 weeks. Allow soil to dry out between watering. Loves bright, indirect sunlight.</p>
+      </div>
+    </div>
+
+    <!-- Plant Card 2 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Snake Plant.jpg" alt="Snake Plant">
+      </div>
+      <div class="card-content">
+        <h2>Snake Plant</h2>
+        <p>Very low maintenance. Water once every 2-3 weeks. Can survive in low light conditions.</p>
+      </div>
+    </div>
+
+    <!-- Plant Card 3 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="Peace Lily.jpg" alt="Peace Lily">
+      </div>
+      <div class="card-content">
+        <h2>Peace Lily</h2>
+        <p>Keep soil slightly moist. Water weekly. Prefers shade and indirect light.</p>
+      </div>
+    </div>
+
+   
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>Made with ❤️ by a Plant Lover</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
